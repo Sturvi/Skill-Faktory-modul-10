@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/D 1/D 1.iml" filepath="$PROJECT_DIR$/D 1/D 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/D2/D2.iml" filepath="$PROJECT_DIR$/D2/D2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/D3/D3.iml" filepath="$PROJECT_DIR$/D3/D3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/D4/D4.iml" filepath="$PROJECT_DIR$/D4/D4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Skill-Faktory-modul-10.iml" filepath="$PROJECT_DIR$/.idea/Skill-Faktory-modul-10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Z 10.2.3/Z 10.2.3.iml" filepath="$PROJECT_DIR$/Z 10.2.3/Z 10.2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Z 10.3.1/Z 10.3.1.iml" filepath="$PROJECT_DIR$/Z 10.3.1/Z 10.3.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Z10.2.1/Z10.2.1.iml" filepath="$PROJECT_DIR$/Z10.2.1/Z10.2.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Z10.2.2/Z10.2.2.iml" filepath="$PROJECT_DIR$/Z10.2.2/Z10.2.2.iml" />
     </modules>
