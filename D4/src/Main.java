@@ -10,18 +10,26 @@ public class Main {
         int count = 1;
         boolean test = false;
 
-        while (scanner.hasNextInt()){
-            if (scanner.nextInt() == count){
-                if (test) {
-                    fileWriter.write(System.getProperty( "line.separator" ));
-                }
-                fileWriter.write(Integer.toString(count));
-                test = true;
+        while (scanner.hasNextLine()) {
+            String temp = scanner.nextLine();
+            int x = 0;
+            boolean isNumber = true;
+            try {
+                x=Integer.valueOf(temp);
+            } catch(NumberFormatException e){
+                isNumber = false;
             }
+            if (isNumber && x == count) {
+                    if (test) {
+                        fileWriter.write(System.getProperty("line.separator"));
+                    }
+                    fileWriter.write(Integer.toString(count));
+                    test = true;
+                }
             count++;
         }
 
-        if (!test){
+        if (!test) {
             fileWriter.write("0");
 
         }

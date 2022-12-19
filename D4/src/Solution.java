@@ -10,8 +10,8 @@ public class Solution {
         int count = 1;
         boolean test = false;
 
-        while (scanner.hasNextInt()){
-            if (scanner.nextInt() == count){
+        while (scanner.hasNextLine()){
+            if (scanner.hasNextInt() && scanner.nextInt() == count){
                 if (test) {
                     fileWriter.write(System.getProperty( "line.separator" ));
                 }
@@ -20,6 +20,26 @@ public class Solution {
             }
             count++;
         }
+
+/*        while (scanner.hasNextLine()) {
+            String temp = scanner.nextLine();
+            int x = 0;
+            boolean isNumber = true;
+            try {
+                x=Integer.valueOf(temp);
+            } catch(NumberFormatException e){
+                isNumber = false;
+            }
+            if (isNumber && x == count) {
+                if (test) {
+                    fileWriter.write(System.getProperty("line.separator"));
+                }
+                fileWriter.write(Integer.toString(count));
+                test = true;
+            }
+            count++;
+        }*/
+
 
         if (!test){
             fileWriter.write("0");
