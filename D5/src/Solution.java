@@ -5,26 +5,17 @@ import java.util.Scanner;
 public class Solution {
     public boolean arePalindromes() throws FileNotFoundException {
         Scanner scanner = new Scanner(new FileReader("D5/src/strings.txt"));
+        if (!scanner.hasNextLine()) return false;
 
-        boolean empty = true;
         while (scanner.hasNextLine()) {
-            empty = false;
-            String line = scanner.nextLine();
-            int start = 0;
-            int end = line.length()-1;
+            String line = scanner.nextLine().replaceAll(" ", "");
+            String reverseLine = new StringBuilder(line).reverse().toString();
 
-            while (start < end) {
-                if (!Character.toString(line.charAt(start)).equalsIgnoreCase (Character.toString(line.charAt(end)))) {
-                    return false;
-                }
-                start++;
-                end--;
-                while (Character.toString(line.charAt(start)).equals(" "))
-                    start++;
-                while (Character.toString(line.charAt(end)).equals(" "))
-                    end--;
+            if (!line.equalsIgnoreCase(reverseLine)){
+                return false;
             }
         }
-        return empty ? false : true;
+
+        return true;
     }
 }
