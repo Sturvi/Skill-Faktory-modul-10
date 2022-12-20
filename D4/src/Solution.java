@@ -26,7 +26,7 @@ public class Solution {
             int x = 0;
             boolean isNumber = true;
             try {
-                x=Integer.valueOf(temp);
+                x=Integer.parseInt(temp);
             } catch(NumberFormatException e){
                 isNumber = false;
             }

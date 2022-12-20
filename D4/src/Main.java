@@ -15,21 +15,21 @@ public class Main {
             int x = 0;
             boolean isNumber = true;
             try {
-                x=Integer.valueOf(temp);
+                x=Integer.parseInt(temp);
             } catch(NumberFormatException e){
                 isNumber = false;
             }
             if (isNumber && x == count) {
-                    if (test) {
-                        fileWriter.write(System.getProperty("line.separator"));
-                    }
-                    fileWriter.write(Integer.toString(count));
-                    test = true;
+                if (test) {
+                    fileWriter.write(" ");
                 }
+                fileWriter.write(Integer.toString(count));
+                test = true;
+            }
             count++;
         }
 
-        if (!test) {
+        if (!test){
             fileWriter.write("0");
 
         }
